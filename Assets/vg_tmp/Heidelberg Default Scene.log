@@ -1,0 +1,6 @@
+Initialized VirtualGrasp SDK (version 0.15.0-free).[VG] [2022-10-04 13:56:58.940] [HandMetaData] [info] Saved debug avatar file Assets/vg_tmp/humanoid_hand_1269503502.bin
+[VirtualGrasp] Registered avatar with id: 28894Loading graspdb C:/Working Files/HeidelbergVR/fix-ink_VR/Assets/StreamingAssets/VG_Grasps/grasps.db[VG] [2022-10-04 13:56:58.969] [VirtualGrasp-selection] [info] Saved debug mesh file: assets/vg_tmp/press_button_2786069177.obj.
+[VG] [2022-10-04 13:56:59.000] [VirtualGrasp-selection] [info] Saved debug mesh file: assets/vg_tmp/unknown_309441337.obj.
+[VG] [2022-10-04 13:56:59.003] [GraspSelector] [info] Save grasp database C:/Working Files/HeidelbergVR/fix-ink_VR/Assets/StreamingAssets/VG_Grasps/grasps.db.
+[VG] [2022-10-04 13:56:59.037] [SelectableScene] [info] Successfully saved scene setup to Assets/vg_tmp/Heidelberg Default Scene.scn!
+[VG] [2022-10-04 13:56:59.038] [SelectableScene] [info] Successfully saved object rig to Assets/vg_tmp/Heidelberg Default Scene.scn.objrig!

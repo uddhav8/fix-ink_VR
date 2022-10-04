@@ -1,0 +1,210 @@
+units_in_meters: 1
+sensor_setup {
+  wrist_pos_sensor: ExternalController
+  wrist_rot_sensor: ExternalController
+  finger_pose_sensor: ExternalController
+  finger_control_type: BY_ANIMATION
+  sensor_origin_position {
+    x: -0
+    z: 452
+  }
+  sensor_origin_rotation {
+    w: 1
+  }
+}
+control_setup {
+  gesture_duration: 0.1
+  form_push_gesture: true
+  mode_interpolation_duration {
+    grasp: 0.05
+    hold: 0.1
+    release: 0.1
+    empty: 0.1
+  }
+  grasp_selection_pos_thresh: 1
+  grasp_selection_rot_thresh: 0.5
+  grasp_selection_pos_weight: 0.5
+  grasp_selection_rot_weight: 0.5
+  push_angle_thresh: 2.61799383
+}
+avatar {
+  scale: 1
+  instance_id: 28894
+  avatar_hash: 1269503502
+  hand_hash: 1949468064
+  hand_hash: 3674342058
+}
+object {
+  joint {
+    id: 2147483647
+    name: "vg_world"
+    joint_type: fixed
+    position {
+    }
+    rotation {
+      w: 1
+    }
+  }
+}
+object {
+  joint {
+    id: -1240
+    name: "heidenbergsm74"
+    parent_id: 2147483647
+    joint_type: fixed
+    position {
+      x: -0
+    }
+    rotation {
+      w: 1
+    }
+  }
+}
+object {
+  joint {
+    id: -1362
+    name: "ejector_section"
+    parent_id: -1240
+    joint_type: fixed
+    position {
+      x: -3.1482861
+      y: 111.649193
+      z: 234.748
+    }
+    rotation {
+      x: 0.707106769
+      y: -0
+      z: -0
+      w: -0.707106709
+    }
+  }
+}
+object {
+  joint {
+    id: -32216
+    name: "wireless_console"
+    parent_id: -1362
+    joint_type: fixed
+    position {
+      x: -77.2552109
+      y: 111.649193
+      z: 244.45285
+    }
+    rotation {
+      x: 0.707106769
+      y: -0
+      z: -0
+      w: -0.707106709
+    }
+  }
+}
+object {
+  joint {
+    id: -37760
+    name: "press_button_base"
+    parent_id: -32216
+    joint_type: fixed
+    position {
+      x: -68.43927
+      y: 127.414063
+      z: 249.049347
+    }
+    rotation {
+      x: 0.707106769
+      y: -0
+      z: -0
+      w: -0.707106709
+    }
+  }
+}
+object {
+  joint {
+    id: -37768
+    name: "press_button"
+    hash: 2786069177
+    parent_id: -37760
+    joint_type: planar
+    axis {
+      x: -0
+      z: 1
+    }
+    axis2 {
+      y: 1
+      z: -0
+    }
+    joint_center {
+      x: -0
+    }
+    range_min: -0
+    range_max: -0
+    range_min2: -0.125
+    range_max2: 0.125
+    position {
+      x: -68.43927
+      y: 127.414063
+      z: 249.049347
+    }
+    rotation {
+      x: 0.707106769
+      y: -0
+      z: -0
+      w: -0.707106709
+    }
+    user_specified_joint_center: true
+    push_axis {
+      x: -0
+      z: 1
+    }
+    grasp_constraint_axis {
+      x: -0
+      z: 1
+    }
+  }
+  selection_weight: 1
+  affordance: ONLY_FINGER_PUSHABLE
+  synthesis_method: HYBRID
+}
+object {
+  joint {
+    id: 28884
+    name: "unknown"
+    hash: 309441337
+    parent_id: -1362
+    axis {
+      x: -0
+      y: -1
+      z: 1.78813949e-07
+    }
+    joint_center {
+      x: -0
+    }
+    range_max: 6.28318548
+    position {
+      x: 65.8234711
+      y: 87.8013382
+      z: 268.204712
+    }
+    rotation {
+      x: 0.707106769
+      y: -0
+      z: -0
+      w: -0.707106709
+    }
+    user_specified_joint_center: true
+    discrete: 0
+    discrete: 6.28318548
+    push_axis {
+      x: -0
+      y: -1
+      z: 1.78813949e-07
+    }
+    grasp_constraint_axis {
+      x: -0
+      y: -1
+      z: 1.78813949e-07
+    }
+  }
+  selection_weight: 1
+  affordance: ONLY_GRASPABLE
+  synthesis_method: HYBRID
+}

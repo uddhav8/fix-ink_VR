@@ -1,0 +1,25 @@
+0 hidden joints: ()
+
+Object hierarchy:
+
+LIMB [vg_world|2147483647] has no parent and 1 child
+ Joint: [vg_world|2147483647] FIXED, axis [0, 0, 0], push_axis [0, 0, 0], pivot [0, 0, 0], limit [0, 0], screw_rate 0, dofs , twist 0 (deg)
+
+	LIMB [heidenbergsm74|-1240] has parent [vg_world|2147483647]-FIXED and 1 child
+	 Joint: [heidenbergsm74|-1240] FIXED, axis [-0, 1, 0], push_axis [-0, 1, 0], pivot [0, 0, 0], limit [0, 0], screw_rate 0, dofs , twist 0 (deg)
+
+		LIMB [ejector_section|-1362] has parent [heidenbergsm74|-1240]-FIXED [vg_world|2147483647]-FIXED and 2 children
+		 Joint: [ejector_section|-1362] FIXED, axis [-0, 1, 0], push_axis [-0, 1, 0], pivot [0, 0, 0], limit [0, 0], screw_rate 0, dofs , twist 0 (deg)
+
+			LIMB [wireless_console|-32216] has parent [ejector_section|-1362]-FIXED [heidenbergsm74|-1240]-FIXED [vg_world|2147483647]-FIXED and 1 child
+			 Joint: [wireless_console|-32216] FIXED, axis [-0, 1, 0], push_axis [-0, 1, 0], pivot [0, 0, 0], limit [0, 0], screw_rate 0, dofs , twist 0 (deg)
+
+				LIMB [press_button_base|-37760] has parent [wireless_console|-32216]-FIXED [ejector_section|-1362]-FIXED [heidenbergsm74|-1240]-FIXED [vg_world|2147483647]-FIXED and 1 child
+				 Joint: [press_button_base|-37760] FIXED, axis [-0, 1, 0], push_axis [-0, 1, 0], pivot [0, 0, 0], limit [0, 0], screw_rate 0, dofs , twist 0 (deg)
+
+					LIMB [press_button|-37768] has parent [press_button_base|-37760]-FIXED [wireless_console|-32216]-FIXED [ejector_section|-1362]-FIXED [heidenbergsm74|-1240]-FIXED [vg_world|2147483647]-FIXED and 0 children
+					 Joint: [press_button|-37768] PLANAR, axis [-0, 0, 1], push_axis [-0, 0, 1], pivot [-0, 0, 0], limit [-0, -0], screw_rate 0, dofs 0.000 0.000, twist 0 (deg)
+
+			LIMB [unknown|28884] has parent [ejector_section|-1362]-FIXED [heidenbergsm74|-1240]-FIXED [vg_world|2147483647]-FIXED and 0 children
+			 Joint: [unknown|28884] REVOLUTE, axis [-0, -1, 1.78814e-07], push_axis [-0, -1, 1.78814e-07], pivot [-0, 0, 0], limit [0, 6.28319], screw_rate 0, dofs 0.000, twist 0 (deg)
+
